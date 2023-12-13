@@ -12,10 +12,12 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+HardcodedAuthenticationService: any;
+// isUserLoggedIn: any;
 
-  isUserLoggedIn : boolean = false ;
-  constructor( private HardcodedAuthenticationService : HardcodedAuthenticationService){
-    this.isUserLoggedIn = this.HardcodedAuthenticationService.isUserLoggedIn();
-  }
+  // isUserLoggedIn : boolean = false ;
+  // constructor( private HardcodedAuthenticationService : HardcodedAuthenticationService){
+  //   // this.isUserLoggedIn = this.HardcodedAuthenticationService.isUserLoggedIn();
+  // }
 
 }
