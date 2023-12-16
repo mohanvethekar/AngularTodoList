@@ -7,17 +7,17 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule , FormsModule , RouterLink ],
+  imports: [CommonModule , FormsModule , RouterLink  ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+// HardcodedAuthenticationService:HardcodedAuthenticationService = HardcodedAuthenticationService ;
 HardcodedAuthenticationService: any;
 // isUserLoggedIn: any;
 
-  // isUserLoggedIn : boolean = false ;
+  // this.isUserLoggedIn :any;
   // constructor( private HardcodedAuthenticationService : HardcodedAuthenticationService){
-  //   // this.isUserLoggedIn = this.HardcodedAuthenticationService.isUserLoggedIn();
-  // }
+    // this.isUserLoggedIn = this.HardcodedAuthenticationService.isUserLoggedIn();
+  }
 
-}
