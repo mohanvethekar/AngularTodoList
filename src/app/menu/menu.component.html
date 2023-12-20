@@ -1,9 +1,14 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div><a routerLink=" v" class="navbar-brand">TODO</a></div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div><a routerLink=" v" class="navbar-brand">TODO</a></div>
       <ul *ngIf="HardcodedAuthenticationService.isLoggedIn()" class="navbar-nav">
-        <li><a  routerLink="/welcome/Mohan" class="nav-link">Home</a></li>
-        <li><a  routerLink="/todos" class="nav-link">Todo</a></li>
+        <p *ngIf="HardcodedAuthenticationService.isLoggedIn()">Hello</p>
+        <li>
+          <a  routerLink="/welcome/Mohan" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a  routerLink="/todos" class="nav-link">Todo</a>
+        </li>
       </ul>
       <ul class="navbar-nav navbar-collapse justify-content-end">
         <li><a  routerLink="/login" class="nav-link">Login</a></li>

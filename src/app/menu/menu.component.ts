@@ -13,11 +13,12 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
 })
 export class MenuComponent {
 // HardcodedAuthenticationService:HardcodedAuthenticationService = HardcodedAuthenticationService ;
-HardcodedAuthenticationService: any;
+// HardcodedAuthenticationService: any;
 // isUserLoggedIn: any;
 
   // this.isUserLoggedIn :any;
-  // constructor( private HardcodedAuthenticationService : HardcodedAuthenticationService){
-    // this.isUserLoggedIn = this.HardcodedAuthenticationService.isUserLoggedIn();
+  constructor( public HardcodedAuthenticationService : HardcodedAuthenticationService){
+    // HardcodedAuthenticationService = this.HardcodedAuthenticationService.isUserLoggedIn();
   }
 
+}

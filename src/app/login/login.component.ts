@@ -29,11 +29,13 @@ constructor( private router:Router , public HardcodedAuthenticationService:Hardc
       this.invalidLogin=false ;
       this.router.navigate(['welcome',this.username]);
      
-      
+      console.log("not running")
+
       this.key=true
     }else{
       this.invalidLogin=true;
       this.key=false
+      console.log("running")
     }
   }
 }
